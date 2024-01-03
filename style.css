@@ -4,8 +4,9 @@
 }
 body{
     display: flex;
+    gap: 16px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     background-image: url(backgroung.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,23 +16,31 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 7.5px ;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bolder;
+}
+#title h1{
+    padding: 3px;
+    border-radius: 13px;
+    background-color: rgba(143, 45, 45, 0.699)
 }
 #types{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .types-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap:5vw;
-    margin: 20px;
+    gap:30px;
+    margin-top: 10px;
     padding: 10px;
+    background-color: rgba(109, 97, 97, 0.527);
+    border-radius: 20px;
 }
 #nepali,
 #indian,
@@ -41,14 +50,13 @@ body{
 #american{
     display: flex;
     flex-direction: column;
-    /* border: 5px solid rgb(22, 24, 22);  */
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 38px;
+    border-radius: 40px;
+    padding: 10px 20px; 
+    font-size: 30px;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-
+    background-color: #f0c8c8;
 }
 img{
     height: 190px;
@@ -56,12 +64,16 @@ img{
     border-radius: 20px;
 }
 img:hover{
-    background-color: black;
-    opacity: 65%;
+    opacity: 70%;
 }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
 }
